@@ -1,0 +1,14 @@
+{
+  "name": "aixio",
+  "owner": {
+    "name": "Aixio",
+    "email": "support@aixio.app"
+  },
+  "plugins": [
+    {
+      "name": "aixio-api",
+      "source": "./",
+      "description": "Aixio\u2019s own Image to Layer model, with complementary media generation."
+    }
+  ]
+}

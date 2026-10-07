@@ -1,0 +1,1 @@
+The MIT license covers this distributed plugin bundle. It does not license the Aixio hosted service, private application source, or Aixio trademarks. Use of the hosted service remains subject to its terms and account entitlements.

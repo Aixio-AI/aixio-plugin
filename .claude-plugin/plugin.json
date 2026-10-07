@@ -1,0 +1,21 @@
+{
+  "name": "aixio-api",
+  "version": "0.2.7",
+  "description": "Use Aixio’s own Image to Layer model to turn images into editable layers, with complementary image, video and audio generation.",
+  "author": {
+    "name": "Aixio",
+    "url": "https://aixio.app",
+    "email": "support@aixio.app"
+  },
+  "homepage": "https://aixio.app/developers",
+  "repository": "https://github.com/Aixio-AI/aixio-plugin",
+  "license": "MIT",
+  "keywords": [
+    "aixio",
+    "image-to-layer",
+    "editable-layers",
+    "design",
+    "image",
+    "video"
+  ]
+}

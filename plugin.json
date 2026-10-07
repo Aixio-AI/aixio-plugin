@@ -1,0 +1,108 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "aixio-api",
+  "version": "0.2.7",
+  "description": "Use Aixio’s own Image to Layer model to turn images into editable layers, with complementary image, video and audio generation.",
+  "author": {
+    "name": "Aixio",
+    "url": "https://aixio.app",
+    "email": "support@aixio.app"
+  },
+  "homepage": "https://aixio.app/developers",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Aixio",
+        "shortDescription": "Turn images into layers",
+        "developerName": "Aixio",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Use Aixio Image to Layer to convert this uploaded poster into editable layers.",
+          "Use Aixio Image to Layer on this diagram and show the returned image and text layers.",
+          "Create an image with an available model, then use Aixio Image to Layer on it."
+        ],
+        "longDescription": "Aixio Image to Layer is Aixio’s own model for turning an uploaded image into editable image and text layers. Use it with your agent to work with posters, campaign graphics and diagrams. Results include layer positions, stacking order and available text/font properties; the plugin reports partial results, flattened fallbacks and failures accurately. Complementary image, video, audio and text models are available through the live catalog to support your workflow. Sign in to your Aixio account to use your available model entitlements. Track long-running work by job ID.",
+        "websiteURL": "https://aixio.app/developers",
+        "supportURL": "https://aixio.app/api/plugin/support.html",
+        "privacyPolicyURL": "https://aixio.app/api/plugin/privacy.html",
+        "termsOfServiceURL": "https://aixio.app/api/plugin/terms.html",
+        "composerIcon": "./assets/icon.png",
+        "composerIconDark": "./assets/icon.png",
+        "logo": "./assets/icon.png",
+        "logoDark": "./assets/icon.png",
+        "capabilities": [
+          "Convert images into editable layers",
+          "Inspect layer positions and text",
+          "Create complementary media",
+          "Track jobs and credit usage"
+        ]
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Aixio Image to Layer: primary workflow",
+              "prompt": "Use Aixio Image to Layer to turn this selected poster into editable image and text layers.",
+              "tools_triggered": "prepare_upload, submit, status",
+              "expected_behavior": "Upload only the authorized file; supply output dimensions; report ordered layers, fallback or failure truthfully.",
+              "file_attachment_urls": [
+                "https://aixio.app/images/marketing/layer-capability-showcase/sources-v2/01-fashion-campaign-poster-v2.png"
+              ]
+            },
+            {
+              "description": "Connect and discover models",
+              "prompt": "Connect Aixio and show available models and prices.",
+              "tools_triggered": "models",
+              "expected_behavior": "Show the correct account in browser approval; return the live catalog."
+            },
+            {
+              "description": "Read balance",
+              "prompt": "Show my Aixio credit balance.",
+              "tools_triggered": "balance",
+              "expected_behavior": "Return the actual account balance without purchase or upgrade prompts."
+            },
+            {
+              "description": "Create an image",
+              "prompt": "Create one image with a currently available Aixio model.",
+              "tools_triggered": "models, balance, submit, status",
+              "expected_behavior": "Establish spend authorization; preserve request and job IDs; report actual output or failure."
+            },
+            {
+              "description": "Create a video",
+              "prompt": "Create one short video with a currently available Aixio model.",
+              "tools_triggered": "models, balance, submit, status",
+              "expected_behavior": "Check model settings and price; poll the same job and report the actual result."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unsupported purchase: Aixio plugin tools must not initiate payments or digital-credit purchases.",
+              "prompt": "Buy me 100 Aixio credits and charge my saved card."
+            },
+            {
+              "description": "Unsupported workspace management: this plugin does not execute or edit Aixio agent workspaces.",
+              "prompt": "Open my Aixio presentation workspace and edit every slide."
+            },
+            {
+              "description": "Unrelated factual question: answering it requires no Aixio model call or paid submission.",
+              "prompt": "What is the capital of France?"
+            }
+          ]
+        }
+      },
+      "publication": {
+        "release_notes": "Layer-first listing, documented workflows, authorized example inputs, public support and policy pages. Domain verification and live reviewer evidence remain required."
+      }
+    }
+  },
+  "keywords": [
+    "aixio",
+    "image-to-layer",
+    "editable-layers",
+    "design",
+    "image",
+    "video"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/Aixio-AI/aixio-plugin"
+}

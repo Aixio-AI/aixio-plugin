@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "aixio": {
+      "type": "http",
+      "url": "https://data.aixio.app/functions/v1/platform-api-mcp"
+    }
+  }
+}
