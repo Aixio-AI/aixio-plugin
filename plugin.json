@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "aixio-api",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Use Aixio’s own Image to Layer model to turn images into editable layers, with complementary image, video and audio generation.",
   "author": {
     "name": "Aixio",
@@ -15,7 +15,7 @@
         "displayName": "Aixio",
         "shortDescription": "Turn images into layers",
         "developerName": "Aixio",
-        "category": "Productivity",
+        "category": "Creativity",
         "defaultPrompt": [
           "Use Aixio Image to Layer to convert this uploaded poster into editable layers.",
           "Use Aixio Image to Layer on this diagram and show the returned image and text layers.",
