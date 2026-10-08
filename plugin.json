@@ -89,7 +89,6 @@
             }
           ]
         },
-        "demo_recording_url": "https://github.com/Aixio-AI/aixio-plugin/releases/download/v0.2.10/aixio-plugin-walkthrough.mp4",
         "release_notes": "Aixio Image to Layer leads this release. Each model operation has explicit typed inputs. Verified live Layer, image, and video results are demonstrated in the walkthrough."
       },
       "publication": {

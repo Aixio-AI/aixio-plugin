@@ -53,6 +53,6 @@ Use Claude’s MCP authentication flow to connect Aixio. Directory approval is p
 
 MIT for the plugin bundle; see LICENSE and NOTICE.md. Aixio service terms and trademarks remain separate.
 
-## Verified walkthrough
+## Verified production demo
 
-[Watch the recorded output walkthrough](https://github.com/Aixio-AI/aixio-plugin/releases/download/v0.2.10/aixio-plugin-walkthrough.mp4). It presents actual Codex MCP test results in a separate output viewer, rather than a recording of the Codex application. The Layer case produced 8 editable layers out of 9 with no fallback; the image and video cases also succeeded.
+A bounded Codex MCP test produced 8 editable layers out of 9 with no fallback. The complementary image and video cases also succeeded. The reviewer recording is distributed separately through the OpenAI review process and is not included in this public package.
