@@ -88,13 +88,12 @@
               "prompt": "What is the capital of France?"
             }
           ]
-        },
-        "release_notes": "Aixio Image to Layer leads this release. Each model operation has explicit typed inputs. Verified live Layer, image, and video results are demonstrated in the walkthrough."
+        }
       },
       "publication": {
         "release_notes": "Layer-first listing, documented workflows, authorized example inputs, public support and policy pages. Domain verification and live reviewer evidence remain required."
       },
-      "release_notes": "Expose each active model operation upfront as a separate tool with explicit named inputs, required fields, ranges and annotations. Remove generic catalog and submission tools from hosted MCP."
+      "release_notes": "Aixio Image to Layer leads this release. Each model operation has explicit typed inputs. Verified live Layer, image, and video results are demonstrated in the walkthrough."
     }
   },
   "keywords": [
