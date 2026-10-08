@@ -18,9 +18,9 @@ Use the existing entitlements and balance in your Aixio account. The plugin does
 Disconnect apps at https://aixio.app/developers?tab=connections. Disconnecting
 blocks access without cancelling jobs already accepted.
 
-Discover models and their current settings with `models`. Check `balance`,
-submit an authorized job, then save its ID and retrieve `status` every three
-seconds. A tool timeout does not mean the job failed. Resume the same job;
+Inspect the exposed model operation tools and their typed input schemas. Check
+`balance`, call the selected model operation after user authorization, then save
+its job ID and retrieve `status` at the returned polling interval. A tool timeout does not mean the job failed. Resume the same job;
 never submit a replacement automatically. Results may contain assets, text,
 editable layers, or a truthful error. Signed result links expire; retrieve the
 job again to refresh them.
@@ -52,3 +52,7 @@ Use Claude’s MCP authentication flow to connect Aixio. Directory approval is p
 ## License
 
 MIT for the plugin bundle; see LICENSE and NOTICE.md. Aixio service terms and trademarks remain separate.
+
+## Verified walkthrough
+
+[Watch the recorded output walkthrough](https://github.com/Aixio-AI/aixio-plugin/releases/download/v0.2.10/aixio-plugin-walkthrough.mp4). It presents actual Codex MCP test results in a separate output viewer, rather than a recording of the Codex application. The Layer case produced 8 editable layers out of 9 with no fallback; the image and video cases also succeeded.
