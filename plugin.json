@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "aixio-api",
-  "version": "0.2.10",
-  "description": "Use Aixio\u2019s own Image to Layer model to turn images into editable layers, with complementary image, video and audio generation.",
+  "version": "0.2.12",
+  "description": "Use Aixio Image to Layer to turn images into editable layers, with selected current image and video models.",
   "author": {
     "name": "Aixio",
     "url": "https://aixio.app",
@@ -21,7 +21,7 @@
           "Use Aixio Image to Layer on this diagram and show the returned image and text layers.",
           "Create an image with an available model, then use Aixio Image to Layer on it."
         ],
-        "longDescription": "Aixio Image to Layer is Aixio\u2019s own model for turning an uploaded image into editable image and text layers. Use it with your agent to work with posters, campaign graphics and diagrams. Results include layer positions, stacking order and available text/font properties; the plugin reports partial results, flattened fallbacks and failures accurately. Complementary image, video, audio and text models are available through the live catalog to support your workflow. Sign in to your Aixio account to use your available model entitlements. Track long-running work by job ID.",
+        "longDescription": "Aixio Image to Layer is Aixio’s own model for turning an uploaded image into editable image and text layers. Use it with your agent to work with posters, campaign graphics and diagrams. Results include layer positions, stacking order and available text/font properties; the plugin reports partial results, flattened fallbacks and failures accurately. Complementary Seedream 5.0 Pro, Seedream 5.0 Lite, Nano Banana 2 and Seedance 2.5 operations support your workflow when enabled. Sign in to your Aixio account to use your available model entitlements. Track long-running work by job ID.",
         "websiteURL": "https://aixio.app/developers",
         "supportURL": "https://aixio.app/api/plugin/support.html",
         "privacyPolicyURL": "https://aixio.app/api/plugin/privacy.html",
@@ -93,7 +93,7 @@
       "publication": {
         "release_notes": "Layer-first listing, documented workflows, authorized example inputs, public support and policy pages. Domain verification and live reviewer evidence remain required."
       },
-      "release_notes": "Aixio Image to Layer leads this release. Each model operation has explicit typed inputs. Verified live Layer, image, and video results are demonstrated in the walkthrough."
+      "release_notes": "Clarify Image to Layer as the primary workflow, describe optional supporting image/video operations, and correct the Layer example to use explicit MCP arguments."
     }
   },
   "keywords": [

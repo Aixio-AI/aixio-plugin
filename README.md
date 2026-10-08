@@ -1,5 +1,5 @@
 # Aixio — Image to Layer
-Aixio Image to Layer is Aixio’s own model and the primary capability of this plugin. Convert an authorized image into image and text layers, inspect their positions and stacking order, and use the returned layers in your editing workflow. Complementary image, video, audio and text models are available through the live catalog. These supporting models are not represented as Aixio-owned models.
+Aixio Image to Layer is Aixio’s own model and the primary capability of this plugin. Convert an authorized image into image and text layers, inspect their positions and stacking order, and use the returned layers in your editing workflow. Complementary Seedream 5.0 Pro, Seedream 5.0 Lite, Nano Banana 2 and Seedance 2.5 operations are exposed only when enabled. These supporting models are not represented as Aixio-owned models. They can create or edit a source image or animate a selected result when requested; the plugin never runs an extra paid step automatically.
 
 ## Primary examples
 
@@ -38,21 +38,4 @@ Selected uploads, prompts, generation settings and account-linked job records ar
 
 ## Limits
 
-Available models and prices are returned by the live catalog. Generation requires sufficient credits and enabled API admission. A model may return a failure or flattened layer fallback; the plugin reports these faithfully. Host file upload capability is required for media inputs.
-
-## Claude Code installation
-
-```text
-/plugin marketplace add Aixio-AI/aixio-plugin
-/plugin install aixio-api@aixio
-```
-
-Use Claude’s MCP authentication flow to connect Aixio. Directory approval is pending; this repository is an installation source, not proof of official listing. The hosted service must be available and the host OAuth client admitted before authenticated calls succeed.
-
-## License
-
-MIT for the plugin bundle; see LICENSE and NOTICE.md. Aixio service terms and trademarks remain separate.
-
-## Verified production demo
-
-A bounded Codex MCP test produced 8 editable layers out of 9 with no fallback. The complementary image and video cases also succeeded. The reviewer recording is distributed separately through the OpenAI review process and is not included in this public package.
+Supported operations and accepted settings appear in the MCP tool list. Use the account’s model pricing shown on Aixio; do not invent prices from tool names. Generation requires sufficient credits and enabled API admission. A model may return a failure or flattened layer fallback; the plugin reports these faithfully. Host file upload capability is required for media inputs.
