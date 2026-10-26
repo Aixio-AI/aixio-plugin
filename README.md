@@ -61,4 +61,4 @@ codex plugin marketplace add Aixio-AI/aixio-plugin
 codex plugin add aixio-api@aixio
 ```
 
-Restart Codex, sign in to Aixio when prompted, and invoke `$aixio-designer` with your request. Alternatively use the [single setup instruction](./SETUP.md), which installs the skill directly and reuses the hosted MCP connection.
+Restart Codex, sign in to Aixio when prompted, and invoke `$aixio-api:aixio-designer` with your request. This is the namespaced skill name verified in Codex. A skill installed directly by the standalone setup instruction uses `$aixio-designer`. Alternatively use the [single setup instruction](./SETUP.md), which installs the skill directly and reuses the hosted MCP connection.
