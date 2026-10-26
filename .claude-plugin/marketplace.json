@@ -8,10 +8,10 @@
     {
       "name": "aixio-api",
       "source": "./",
-      "description": "Aixio’s own Image to Layer model, with complementary media generation."
+      "description": "Design websites, apps and games with the Aixio image-to-layer pipeline."
     }
   ],
   "metadata": {
-    "description": "Aixio Image to Layer and complementary creative model tools."
+    "description": "Aixio Designer: image generation, editable layers and implementation guidance."
   }
 }

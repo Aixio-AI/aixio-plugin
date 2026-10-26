@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "aixio-api",
-  "version": "0.2.12",
-  "description": "Use Aixio Image to Layer to turn images into editable layers, with selected current image and video models.",
+  "version": "0.3.0",
+  "description": "Aixio Designer: design with an image model, extract editable layers, and build websites, apps, games and visual artifacts with your agent.",
   "author": {
     "name": "Aixio",
     "url": "https://aixio.app",
@@ -12,16 +12,16 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Aixio",
-        "shortDescription": "Turn images into layers",
+        "displayName": "Aixio Designer",
+        "shortDescription": "Design, extract layers, build",
         "developerName": "Aixio",
         "category": "Creativity",
         "defaultPrompt": [
-          "Use Aixio Image to Layer to convert this uploaded poster into editable layers.",
-          "Use Aixio Image to Layer on this diagram and show the returned image and text layers.",
-          "Create an image with an available model, then use Aixio Image to Layer on it."
+          "Use Aixio Designer to design and build a website from these product photos.",
+          "Use Aixio Designer to design a game screen and implement it in my project.",
+          "Use Aixio Image to Layer to convert this poster into editable layers."
         ],
-        "longDescription": "Aixio Image to Layer is Aixio’s own model for turning an uploaded image into editable image and text layers. Use it with your agent to work with posters, campaign graphics and diagrams. Results include layer positions, stacking order and available text/font properties; the plugin reports partial results, flattened fallbacks and failures accurately. Complementary Seedream 5.0 Pro, Seedream 5.0 Lite, Nano Banana 2 and Seedance 2.5 operations support your workflow when enabled. Sign in to your Aixio account to use your available model entitlements. Track long-running work by job ID.",
+        "longDescription": "Aixio Designer combines image generation and Aixio Image to Layer with instructions for your coding agent. Design websites, app screens, game screens, posters and slides, then build from extracted image pieces and editable text using your agent's own tools. Sign in with your existing Aixio account. The full design pipeline runs two paid jobs after authorization. Inspect partial results and flattened fallbacks honestly, and preview the implementation against its mockup.",
         "websiteURL": "https://aixio.app/developers",
         "supportURL": "https://aixio.app/api/plugin/support.html",
         "privacyPolicyURL": "https://aixio.app/api/plugin/privacy.html",
@@ -93,7 +93,7 @@
       "publication": {
         "release_notes": "Layer-first listing, documented workflows, authorized example inputs, public support and policy pages. Domain verification and live reviewer evidence remain required."
       },
-      "release_notes": "Clarify Image to Layer as the primary workflow, describe optional supporting image/video operations, and correct the Layer example to use explicit MCP arguments."
+      "release_notes": "Adds the Aixio Designer skill, one copy-paste setup instruction and host-specific invocation guidance."
     }
   },
   "keywords": [

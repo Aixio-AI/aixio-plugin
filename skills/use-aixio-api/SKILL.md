@@ -21,4 +21,6 @@ For Aixio Layer v1, call prepare_upload with the selected PNG/JPEG/WebP content 
 
 Layer results contain ordered image/text entries with position, z_index, text/URL, fonts and layer properties. Explain output.decomposition.fallback and editable/total counts truthfully: a successful flattened fallback is not fully editable output. Signed assets/fonts expire; refresh status on the same job to renew them. Present results with their actual links and text; download or save only when asked and through the host's authorized file tools.
 
+For design work the user will build, follow [Aixio Design Agent](../aixio-designer/SKILL.md). That skill owns the design/design_status pipeline, both paid stages, reference handling, layer-based implementation and visual verification. Keep standalone generation and conversion-only requests in this skill. The hosted pipeline selects its image model; do not claim it uses the in-app Website agent's current model configuration.
+
 When the user asks to disconnect this app, call `disconnect` with no arguments. This revokes this connection only, including refresh access. Report success only from the tool result. Website sign-out is separate; accepted jobs and credits remain. To reconnect, use the host sign-in flow and approve again.
