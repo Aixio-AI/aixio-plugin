@@ -1,0 +1,10 @@
+{
+  "name": "aixio",
+  "interface": { "displayName": "Aixio Designer" },
+  "plugins": [{
+    "name": "aixio-api",
+    "source": { "source": "local", "path": "./" },
+    "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+    "category": "Creative"
+  }]
+}

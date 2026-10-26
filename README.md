@@ -1,4 +1,8 @@
-# Aixio — Image to Layer
+# Aixio Design Agent
+
+Design with Aixio's image model, extract editable layers with Aixio Image to Layer, then build the result in Claude Code or Codex. Use the [single copy-paste setup instruction](./SETUP.md) to connect the hosted MCP and persist the workflow. The bundled aixio-designer skill guides reference uploads, both paid stages, layer-based implementation and visual verification. This package uses the existing Aixio account and credits; setup runs no paid jobs.
+
+## Image to Layer and supporting tools
 Aixio Image to Layer is Aixio’s own model and the primary capability of this plugin. Convert an authorized image into image and text layers, inspect their positions and stacking order, and use the returned layers in your editing workflow. Complementary Seedream 5.0 Pro, Seedream 5.0 Lite, Nano Banana 2 and Seedance 2.5 operations are exposed only when enabled. These supporting models are not represented as Aixio-owned models. They can create or edit a source image or animate a selected result when requested; the plugin never runs an extra paid step automatically.
 
 ## Primary examples
@@ -39,3 +43,22 @@ Selected uploads, prompts, generation settings and account-linked job records ar
 ## Limits
 
 Supported operations and accepted settings appear in the MCP tool list. Use the account’s model pricing shown on Aixio; do not invent prices from tool names. Generation requires sufficient credits and enabled API admission. A model may return a failure or flattened layer fallback; the plugin reports these faithfully. Host file upload capability is required for media inputs.
+
+## Install from the publisher marketplace
+
+Claude Code:
+
+```text
+/plugin marketplace add Aixio-AI/aixio-plugin
+/plugin install aixio-api@aixio
+/aixio-api:aixio-designer Design and build a website for my coffee brand.
+```
+
+Codex:
+
+```sh
+codex plugin marketplace add Aixio-AI/aixio-plugin
+codex plugin add aixio-api@aixio
+```
+
+Restart Codex, sign in to Aixio when prompted, and invoke `$aixio-designer` with your request. Alternatively use the [single setup instruction](./SETUP.md), which installs the skill directly and reuses the hosted MCP connection.
