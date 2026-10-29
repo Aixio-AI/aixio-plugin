@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "aixio-api",
-  "version": "0.4.0",
-  "description": "Aixio Designer: design with an image model, extract editable layers, and build websites, apps, games and visual artifacts with your agent.",
+  "version": "0.5.0",
+  "description": "Aixio Designer: design with an image model, review the mockup, extract editable layers, and build websites, apps, games, slide decks, print, social, ads and email with your agent.",
   "author": {
     "name": "Aixio",
     "url": "https://aixio.app",
@@ -19,9 +19,11 @@
         "defaultPrompt": [
           "Use Aixio Designer to design and build a website from these product photos.",
           "Use Aixio Designer to design a game screen and implement it in my project.",
+          "Use Aixio Designer to make a 10-slide pitch deck as a PPTX with live text.",
+          "Use Aixio Designer to design a tri-fold A4 brochure and give me a print-ready PDF with bleed.",
           "Use Aixio Image to Layer to convert this poster into editable layers."
         ],
-        "longDescription": "Aixio Designer combines image generation and Aixio Image to Layer with instructions for your coding agent. Design websites, app screens, game screens, posters and slides, then build from extracted image pieces and editable text using your agent's own tools. Sign in with your existing Aixio account. The full design pipeline runs two paid jobs after authorization. Inspect partial results and flattened fallbacks honestly, and preview the implementation against its mockup.",
+        "longDescription": "Aixio Designer combines image generation and Aixio Image to Layer with instructions for your coding agent. Design websites, app and game screens, slide decks, posters, flyers, brochures, business cards, packaging, social posts, ad banners and emails at their real size (px, or mm/in with DPI, bleed and safe area). Review each mockup before anything is built, keep multi-page sets on one look, then build from extracted image pieces and editable text as HTML, PPTX or a print PDF using your agent's own tools. Sign in with your existing Aixio account. The mockup and the layer cut are two paid jobs, each started only by your call. Inspect partial results and flattened fallbacks honestly, and preview the implementation against its mockup.",
         "websiteURL": "https://aixio.app/developers",
         "supportURL": "https://aixio.app/api/plugin/support.html",
         "privacyPolicyURL": "https://aixio.app/api/plugin/privacy.html",
@@ -33,6 +35,8 @@
         "capabilities": [
           "Convert images into editable layers",
           "Inspect layer positions and text",
+          "Review mockups before building",
+          "Slides, print, social, ads and email formats",
           "Create complementary media",
           "Track jobs and credit usage"
         ]
@@ -93,7 +97,7 @@
       "publication": {
         "release_notes": "Layer-first listing, documented workflows, authorized example inputs, public support and policy pages. Domain verification and live reviewer evidence remain required."
       },
-      "release_notes": "Adds the Aixio Designer skill, one copy-paste setup instruction and host-specific invocation guidance."
+      "release_notes": "Mockup first: design stops at the mockup for review and approve_design cuts it (or redraws it with feedback); mockup_url cuts an approved image. New targets and formats for decks, print (bleed, crop marks, brochure panels), social, IAB banners and email; style_from keeps multi-page sets on one look; the spec adds design tokens and build recipes for HTML, PPTX and print PDF."
     }
   },
   "keywords": [
