@@ -36,6 +36,15 @@ URL and required output dimensions. The connection cannot read local files.
 This package is prepared for hosted distribution. Availability depends on the
 hosted service being activated and the directory's review and publication.
 
+## Your library
+
+The connector also reads and organizes your Aixio library (the files you uploaded): `list_assets`, `list_collections`
+and `find_duplicate_assets` only read it; `organize_assets` renames, tags and collects files in bulk, always as a
+preview first that applies only after you agree; `register_asset` keeps a file uploaded with `prepare_upload`. Nothing
+here deletes a file. To bring a whole folder from your computer into Aixio, use the
+[Aixio local importer](https://aixio.app/api/local-importer.md): it runs on your machine, plans first and uploads only
+when you say so.
+
 ## Privacy and support
 
 Selected uploads, prompts, generation settings and account-linked job records are sent to Aixio. Generation inputs may be processed by the model services used by Aixio. Do not upload files without permission. Read https://aixio.app/legal/privacy for the service privacy policy and https://aixio.app/legal/terms for service terms. Contact support@aixio.app for account or integration support.
