@@ -1,0 +1,7 @@
+# Agent tools' local config, sessions and worktrees (per-user, per-machine). .claude-plugin/ is the plugin itself and stays.
+.claude/
+.codex/
+.gemini/
+.cursor/
+.aider*
+CLAUDE.local.md
